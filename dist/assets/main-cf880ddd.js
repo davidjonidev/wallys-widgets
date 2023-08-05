@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){console.log("js executed..."),document.querySelectorAll('input[type="text"]').forEach(t=>{t.setAttribute("data-lpignore",!0),console.log(t)})});

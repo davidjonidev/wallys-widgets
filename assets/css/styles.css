@@ -1,0 +1,114 @@
+@import "tailwindcss/base";
+/*
+ * uncomment if adding custom base styles
+@import "./custom-base-styles.css";
+*/
+
+@import "tailwindcss/components";
+/*
+ * uncomment if adding custom commponents
+@import "./custom-components.css";
+*/
+
+@import "tailwindcss/utilities";
+/*
+ * uncomment if adding custom utilities
+@import "./custom-utilities.css";
+*/
+
+/* admin bar fix */
+body.admin-bar {
+    max-height: calc(100vh - 32px);
+}
+/* burger menu fix */
+body.admin-bar #burger-menu {
+    max-height: calc(100vh - 32px);
+}
+
+/* Hide LastPass */
+[data-lastpass-icon-root] {
+    display: none !important;
+}
+
+.acf-field input[type="text"],
+.acf-field input[type="password"],
+.acf-field input[type="date"],
+.acf-field input[type="datetime"],
+.acf-field input[type="datetime-local"],
+.acf-field input[type="email"],
+.acf-field input[type="month"],
+.acf-field input[type="number"],
+.acf-field input[type="search"],
+.acf-field input[type="tel"],
+.acf-field input[type="time"],
+.acf-field input[type="url"],
+.acf-field input[type="week"],
+.acf-field textarea,
+.acf-field select {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: 2px solid rgb(29 78 216);
+    background: #fff;
+}
+
+.acf-input-wrap {
+    overflow: visible;
+}
+
+.acf-form .acf-fields.acf-form-fields > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0rem 1.5rem;
+}
+
+@media (max-width: 830px) {
+    .acf-form .acf-fields.acf-form-fields > div {
+        grid-template-columns: 100%;
+    }
+}
+
+#menu-main-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#menu-main-menu .menu-item a {
+    display: block;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: 0.4s all;
+}
+
+#menu-main-menu .menu-item {
+    position: relative;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+#menu-main-menu .menu-item:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #3b82f6;
+    transition: 0.4s all;
+    transform: translateX(-100%);
+}
+
+#menu-main-menu .menu-item:hover:before {
+    transform: translateX(0%);
+}
+
+#menu-main-menu .menu-item:hover a {
+    color: #fff;
+}

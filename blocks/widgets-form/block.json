@@ -1,0 +1,16 @@
+{
+    "name": "acf/widgets-form",
+    "title": "Widgets Form",
+    "description": "Order form for awesome widgets.",
+    "style": ["file:./widgets-form.css"],
+    "category": "widgets",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["form", "widgets", "order"],
+    "version": "1.0.0",
+    "textdomain": "wallys-widgets",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "widgets-form.php"
+    },
+    "align": "full"
+}
