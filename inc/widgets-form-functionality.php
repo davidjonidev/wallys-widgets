@@ -99,6 +99,8 @@ function on_acf_form_widgets_post( $post_id ) {
 
         $widgetFormCalc->calculateResults();
         $results = $widgetFormCalc->getResults();
+
+		unset($widgetFormCalc);
 		
 		// Update title
 		wp_update_post( $my_post );
