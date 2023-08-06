@@ -36,6 +36,10 @@
                     <span class="text-[0.725rem] underline uppercase font-medium">Order ID</span>
                     <?php the_field('email_address'); ?>
                 </div>
+                <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded col-span-2">
+                    <span class="text-[0.725rem] underline uppercase font-medium">Widgets Required</span>
+                    <?php the_field('widgets_required'); ?>
+                </div>
             </div>
 
             <div class="flex flex-col overflow-auto mt-4">
