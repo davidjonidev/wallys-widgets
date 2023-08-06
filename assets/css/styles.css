@@ -151,3 +151,16 @@ th:not(:last-child) {
 #order-history-table th:last-of-type {
     border-bottom: none;
 }
+
+#closeDialog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(calc(-100% - 0.5rem));
+}
+
+#orderDialog {
+    overflow: visible;
+    max-width: 500px;
+    width: 100%;
+}

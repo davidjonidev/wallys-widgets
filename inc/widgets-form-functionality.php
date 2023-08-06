@@ -1,5 +1,10 @@
 <?php
 
+register_meta('post', '_order_results', [
+	'object_subtype' => 'widgets-order',
+	'show_in_rest' => true
+]);
+
 // Add Widget options to admin dashboard
 if( function_exists('acf_add_options_page') ) {
 	

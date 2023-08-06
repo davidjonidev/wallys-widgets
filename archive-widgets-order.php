@@ -37,7 +37,7 @@ if (have_posts()) : ?>
                 <tr class="order-row bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 w-full max-[830px]:grid max-[830px]:grid-cols-2 max-[500px]:grid-cols-1 max-[830px]:gap-4 ">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white min-[831px]:!border-b-0 max-[830px]:flex max-[830px]:flex-col max-[830px]:gap-2">
                         <span class="min-[831px]:hidden max-[830px]:text-[0.725rem] max-[830px]:underline max-[830px]:uppercase">Order ID</span>
-                        <?php the_ID() ?>
+                        <button type="button" class="fetchPreview p-2 rounded bg-slate-200 hover:bg-blue-700 hover:text-white" data-id="<?php the_ID() ?>"><?php the_ID() ?></button>
                     </th>
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white min-[831px]:!border-b-0 max-[830px]:flex max-[830px]:flex-col max-[830px]:gap-2">
                         <span class="min-[831px]:hidden max-[830px]:text-[0.725rem] max-[830px]:underline max-[830px]:uppercase">Date/Time</span>
@@ -59,6 +59,22 @@ if (have_posts()) : ?>
             <?php endwhile; ?>
         </table>
     </div>
+
+    <div id="order-preview" class="flex flex-col gap-4 mt-4">
+
+    </div>
+
+    <dialog id="orderDialog" class="border rounded">
+        <div id="orderDialogContent" class="flex flex-col border rounded bg-slate-200 text-black p-4"></div>
+        <!-- <button type="button" id="closeDialog">Close</button> -->
+        <button type="button" id="closeDialog" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-700 hover:text-gray-500 hover:bg-gray-100">
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+    </dialog>
 <?php endif;
 ?>
 </section>
