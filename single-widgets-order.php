@@ -43,28 +43,28 @@
             </div>
 
             <div class="flex flex-col overflow-auto mt-4">
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-collapse">
-                <thead class="text-xs text-gray-700 uppercase bg-slate-100 border rounded">
-                    <tr>
-                        <th class="px-6 py-3 !border-b-0">Pack Size</th>
-                        <th class="px-6 py-3 !border-b-0"># Required</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <?php
-                foreach($order_details as $key => $val) {
-                    if ( $val !== 0) {
-                    ?>
-                    <tr class="order-row bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 w-full ">
-                        <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"><?php echo $key; ?></td>
-                        <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"><?php echo $val; ?></td>
-                    </tr>
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-collapse">
+                    <thead class="text-xs text-gray-700 uppercase bg-slate-100 border rounded">
+                        <tr>
+                            <th class="px-6 py-3 !border-b-0">Pack Size</th>
+                            <th class="px-6 py-3 !border-b-0"># Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <?php
+                    foreach($order_details as $key => $val) {
+                        if ( $val !== 0) {
+                        ?>
+                        <tr class="order-row bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 w-full ">
+                            <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"><?php echo $key; ?></td>
+                            <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"><?php echo $val; ?></td>
+                        </tr>
+                        <?php
+                        }
                     }
-                }
-                ?>
-                </tbody>
-            </table>
+                    ?>
+                    </tbody>
+                </table>
             </div>
         </section>
 

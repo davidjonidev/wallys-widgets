@@ -6,7 +6,7 @@ if (have_posts()) : ?>
     <div class="flex flex-col gap-4 mb-4 items-center">
         <a href="/" class="text-[0.8rem] font-semibold cursor-pointer flex items-baseline"><i class="fa-solid fa-arrow-left-long mr-2 text-blue-500 hover:text-blue-700 ease-in duration-300"></i>New Order</a>
         <div class="flex flex-col gap-2 border p-2 bg-slate-100 rounded">
-            <div class="text-center">Select an order to view details</div>
+            <div class="text-center">Click on the order id to view a dialog of order details, or click on the details button to view order page.</div>
         </div>
     </div>
 
