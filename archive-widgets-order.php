@@ -5,7 +5,7 @@
 if (have_posts()) : ?>
     <div class="flex flex-col gap-4 mb-4">
         <div class="flex flex-col gap-2 border p-2 bg-slate-100 rounded">
-            <div class="no-post-selected">Select an order to view details</div>
+            <div class="no-post-selected text-center">Select an order to view details</div>
         </div>
     </div>
 
