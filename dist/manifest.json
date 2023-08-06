@@ -1,14 +1,12 @@
 {
-  "main.css": {
-    "file": "assets/main-089b8d35.css",
-    "src": "main.css"
-  },
-  "main.js": {
-    "css": [
-      "assets/main-089b8d35.css"
-    ],
-    "file": "assets/main-a0c12da9.js",
-    "isEntry": true,
-    "src": "main.js"
-  }
+    "main.js": {
+        "css": ["assets/main-a56fd617.css"],
+        "file": "assets/main-56663a95.js",
+        "isEntry": true,
+        "src": "main.js"
+    },
+    "main.css": {
+        "file": "assets/main-a56fd617.css",
+        "src": "main.css"
+    }
 }
