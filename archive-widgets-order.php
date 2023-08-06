@@ -60,10 +60,6 @@ if (have_posts()) : ?>
         </table>
     </div>
 
-    <div id="order-preview" class="flex flex-col gap-4 mt-4">
-
-    </div>
-
     <dialog id="orderDialog" class="border rounded">
         <div id="orderDialogContent" class="flex flex-col border rounded bg-slate-200 text-black p-4"></div>
         <!-- <button type="button" id="closeDialog">Close</button> -->

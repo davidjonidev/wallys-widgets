@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const orderPreviewDiv = document.querySelector("#order-preview");
+    const orderPreviewDiv = document.querySelector("#orderDialog");
     if (orderPreviewDiv) {
         const fetchButtons = document.querySelectorAll(".fetchPreview");
         const orderDialog = document.querySelector("#orderDialog");
@@ -42,13 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const newContent = `
 			<div class="flex flex-col gap-2 divide-y divide-slate-200">
-				<div class="grid grid-cols-2 gap-2">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
 					<div class="font-medium">Customer Name: </div><div>${first_name} ${last_name}</div>
 				</div>
-				<div class="grid grid-cols-2 gap-2">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
 					<div class="font-medium">Email Address: </div><div>${email_address}</div>
 				</div>
-				<div class="grid grid-cols-2 gap-2">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
 					<div class="font-medium">Widgets Required: </div><div>${widgets_required.toLocaleString(
                         "en-GB"
                     )}</div>

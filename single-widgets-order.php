@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded">
                     <span class="text-[0.725rem] underline uppercase font-medium">Order ID</span>
                     <?php the_ID() ?>
@@ -36,7 +36,7 @@
                     <span class="text-[0.725rem] underline uppercase font-medium">Email Address</span>
                     <?php the_field('email_address'); ?>
                 </div>
-                <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded col-span-2">
+                <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded col-span-1 sm:grid-cols-2">
                     <span class="text-[0.725rem] underline uppercase font-medium">Widgets Required</span>
                     <?php the_field('widgets_required'); ?>
                 </div>
