@@ -114,7 +114,7 @@ function on_acf_form_widgets_post( $post_id ) {
 			update_post_meta( $post_id, '_order_results', json_encode($results) );
 		} else {
 			add_post_meta( $post_id, '_order_results', json_encode($results));
-		}	
+		}
 
 	}
 

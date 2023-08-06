@@ -24,16 +24,16 @@
                     <?php the_ID() ?>
                 </div>
                 <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded">
-                    <span class="text-[0.725rem] underline uppercase font-medium">Order ID</span>
+                    <span class="text-[0.725rem] underline uppercase font-medium">Date/Time</span>
                     <?php echo get_the_date( 'd/m/Y - H:i:s' ) ?>
                 </div>
                 <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded">
-                    <span class="text-[0.725rem] underline uppercase font-medium">Order ID</span>
+                    <span class="text-[0.725rem] underline uppercase font-medium">Customer Name</span>
                     <?php the_field('first_name'); ?>
                     <?php the_field('last_name'); ?>
                 </div>
                 <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded">
-                    <span class="text-[0.725rem] underline uppercase font-medium">Order ID</span>
+                    <span class="text-[0.725rem] underline uppercase font-medium">Email Address</span>
                     <?php the_field('email_address'); ?>
                 </div>
                 <div class="order-single-info flex flex-col gap-2 bg-slate-100 p-4 border rounded col-span-2">
