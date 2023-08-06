@@ -28,15 +28,11 @@
                 </a>
             </div>
             <div class="site-menu [&_.menu-open]:opacity-100 [&_.menu-open]:translate-x-0 [&_.menu-open]:z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" class="w-10 h-10 text-blue-500 hover:text-blue-700 cursor-pointer ease-in duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" class="w-10 h-10 text-blue-500 hover:text-blue-700 cursor-pointer ease-in duration-300 hover:scale-105" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
                 <div id="burger-menu" class="fixed translate-x-full opacity-40 bottom-0 right-0 p-8 ease-in duration-300 min-w-[90%] sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] bg-white h-full border-l-2">
-                    <i id="menu-icon-close" class="fa-solid fa-xmark text-blue-500 hover:text-blue-700 cursor-pointer ease-in duration-300 text-4xl mb-4 text-left w-full"></i>
-                    <!-- <ul>
-                        <li>Home</li>
-                        <li>Orders</li>
-                    </ul> -->
+                    <i id="menu-icon-close" class="fa-solid fa-xmark text-blue-500 hover:text-blue-700 cursor-pointer text-4xl mb-4 text-left transition duration-150 ease-out hover:ease-in hover:rotate-90"></i>
                     <?php echo wp_nav_menu() ?>
                 </div>
             </div>

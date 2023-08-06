@@ -16,6 +16,8 @@
 @import "./custom-utilities.css";
 */
 
+@import "./anime.css";
+
 /* admin bar fix */
 body.admin-bar {
     max-height: calc(100vh - 32px);
@@ -92,6 +94,7 @@ body.admin-bar #burger-menu {
     position: relative;
     overflow: hidden;
     background: #f1f5f9;
+    border-radius: 0.25rem;
 }
 
 #menu-main-menu .menu-item:before {
@@ -109,6 +112,42 @@ body.admin-bar #burger-menu {
     transform: translateX(0%);
 }
 
+#menu-main-menu .menu-item:hover {
+    transform-origin: bottom right;
+    transform: rotate(0.5deg);
+}
+
+#menu-main-menu .menu-item {
+    transition: 0.2s all cubic-bezier(0.55, 0.09, 0.68, 0.53);
+}
+
 #menu-main-menu .menu-item:hover a {
     color: #fff;
+    padding-left: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    table {
+        display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
+td:not(:last-child) {
+    border-bottom: 0;
+}
+
+th:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#order-history-table th {
+    border-bottom-width: 1px;
+}
+
+#order-history-table th:last-of-type {
+    border-bottom: none;
 }

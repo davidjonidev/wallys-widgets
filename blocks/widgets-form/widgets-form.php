@@ -55,8 +55,9 @@ $description	= get_field( 'description' ) ?: 'Description';
 					'field_groups'		    => array(14),
 					'html_before_fields'    => '<div>',
 					'html_after_fields'     => '</div>',
-					'submit_value' => __("Submit Order", 'wallys-widgets'),
-					'html_submit_button'  => '<input type="submit" class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" value="%s" />',
+					'submit_value' 			=> __("Submit Order", 'wallys-widgets'),
+					'html_submit_button'  	=> '<input type="submit" class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" value="%s" />',
+					'return'				=> '%post_url%',
 				));
 
 			?>
