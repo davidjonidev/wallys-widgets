@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // From left staggered
     anime({
-        targets: ".acf-field:nth-of-type(odd), .widget-form-header > *",
+        targets:
+            ".acf-field:nth-of-type(odd), .widget-form-header > *, .order-single-info",
         opacity: [0, 1],
         translateX: [-100, 0],
         duration: 500,
